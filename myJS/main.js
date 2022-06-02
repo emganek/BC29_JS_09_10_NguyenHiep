@@ -220,7 +220,7 @@ function setLocalStorage() {
 
 //GET DATA TU LOCAL STORAGE---------------------------
 function getLocalStorage() {
-    if (localStorage.getItem("mangNV") != "") {
+    if (localStorage.getItem("mangNV") != "" && localStorage.getItem("mangNV") != null) {
         danhSachNV.arrNV = JSON.parse(localStorage.getItem("mangNV"));
         taoBang(danhSachNV.arrNV);
     }
